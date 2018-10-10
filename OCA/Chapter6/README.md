@@ -103,6 +103,8 @@
 
 ! All of the above classes use factory (public static) methods to create new objects (not constructors) !
 
+! both LocalDate and DateTimeFormatter have format() methods !
+
 ### Arrays
 
 Normal array creation:
@@ -117,3 +119,48 @@ int[] numbers = {2, 3, 5, 7, 11};
 Just-in-time array creation syntax (NO SIZE IN BRACKETS):
 
 String[] strings = new String[] {"Red", "Blue", "Green"};
+
+### Java Collections API
+
+* java.util.ArrayList
+	* uses zero-based indexing
+	* maintains insertion order
+	* capacity adjusts on the fly
+	* implements the java.util.List interface
+	* overrides the toString() method (prints contents of the list)
+	* can contain duplicate entries
+	* only contain object references, not primitives (primitives get autoboxed into objects)
+
+Commonly used ArrayList methods:
+	* add(element) - appends the element to the end of the list;
+	* add(index, element) - adds this element at the index point;
+	* clear() - removes all elements from the ArrayList;
+	* boolean contains(element) - whether the element is in the list;
+	* Object get(index) - returns the Object at index;
+	* int indexOf(Object) - returns the location of the element, -1 if the Object is not found;
+	* remove(index) - removes the element at index
+	* remove(Object) - removes the *first* occurence of Object
+	* int size() - number of elements in the ArrayList
+
+* Since Java 7 it's possible to use the 'diamond' syntax to declare typed collections:
+	* List<String> l = new ArrayList<>();
+	* List<String> l = new ArrayList<String>(); // same as above
+	* But not:
+	* List<> l = new ArrayList<String>(); // compile error
+
+### Wrapper classes
+
+* All the wrapped classes except Character provide two constructors:
+	* One takes a primitive of the type of being constructed:
+		* Integer int1 = new Integer(123);
+	* The second takes a String:
+		* Integer int2 = new Integer("123"); // throws NumberFormatException
+		
+### Lambdas
+
+The basic syntax for a Predicate lambda has three parts:
+	* A single parameter (x) - with optional type (myst be in parenthesis)
+	* An arrow token (->)
+	* A body that MUST return a boolean
+		* either a single expression (no return statement)
+		* or block of code (with a return statement)

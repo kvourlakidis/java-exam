@@ -12,5 +12,13 @@ public class Strings {
 		System.out.println("stupid".toString().toString().toString());
 		String s = "Java";
 		System.out.println(s += " so much bad");
+		String s1 = new String("JAVA"); 
+		String s2 = new String("JAVA");
+		String s3 = "JAVA";
+		String s4 = "JAVA";
+		System.out.println(s1 == s2); // false
+		System.out.println(s3 == s4); // true
+		System.out.println(s2 == s4); // false
+		System.out.println(s1.equals(s2)); // true
 	}
 }
