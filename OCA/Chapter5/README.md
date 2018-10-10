@@ -64,4 +64,19 @@ do {
 	// code block
 } while (boolean expression);
 
+for ( initialization(s) ; test ; iteration(s)) {
+	// code block
+}
 
+### Exception types
+
+Common types of RuntimeException:
+	* NullPointerException
+	* ArithmeticException
+	* ArrayIndexOutOfBoundsException
+	* ClassCastException
+	* IllegalArgumentException
+		* NumberFormatException
+	* IllegalStateException
+	
+!!! An overriding method does not have to declare the exceptions thrown by the overridden method !!!

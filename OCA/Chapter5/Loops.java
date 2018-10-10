@@ -9,5 +9,8 @@ class Loops {
 		myLoop: for (;++x<10;) System.out.println("x is "+x);
 		do System.out.println("while"); 
 		while(false);
+		//
+		short[] ia = {1,3,5,7,9};
+		for (int y:ia) System.out.print(y);
 	}
 }
