@@ -24,5 +24,8 @@ class Arrays {
 				System.out.println(i);
 		char[] ca = { 0x4e, '\u004e', 78};
 		for (char c : ca) System.out.println(c);	
+		String[][] strings = new String[3][3];
+		strings[0][1] = "some string";
+
 	}
 }

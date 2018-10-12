@@ -1,0 +1,27 @@
+4. b e <- WRONG A E
+Char literals can be assigned to ints.
+8. b <- WRONG C
+10. e <- WRONG C
+"string".toUpperCase() != "string".toUpperCase()
+
+17. b <- WRONG C
+
+26. f <- WRONG D
+Must override ambiguous default methods!
+32. b <- WRONG C
+35. d <- WRONG E
+Java supports functional programming using Lambda expressions.
+41. a <- WRONG D
+Arrays.asList returns a list backed by a fixed-sized array (doesn't support add or remove).
+49. c <- WRONG A
+
+
+53. c e f <- WRONG C D E
+
+58. a <- WRONG B
+60. e f <-  WRONG A E
+try finally cactch ? 
+
+69. c <- WRONG D
+
+71. c <- WRONG D

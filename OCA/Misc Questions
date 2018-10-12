@@ -1,0 +1,78 @@
+Chapter 4 Questions
+
+9. What are the names of the methods to do searching and sorting respectively on arrays?
+
+Searching - Arrays.binarySearch()
+Sorting - Arrays.sort()
+
+10. What does this code output?
+
+Arrays.sort(new String[] {"1", "9", "10"});
+System.out.println(Arrays.toString(nums));
+
+// [1, 10, 9]
+// String sort !
+
+
+The binarySearch() method requires a sorted array in order to return a correct result.
+If the array is not sorted, the results of the binary search are undefined.
+
+This assignment is legal (but dangerous):
+
+int[][] game = new int[3][3];
+
+Object[] obj = game; // legal
+
+obj[3] = "x"; // runtime exception (ArrayStoreException)
+
+What does the following output?
+
+String[] os = {"Mac", "Linux", "Windows"};
+Arrays.sort(os);
+Arrays.binarySearch(os, "RedHat") // ? 
+// Answer: -3: -(index to insert) - 1
+
+How many dimensions does the array reference moreBools allow?
+
+boolean [][] bools[], moreBools;
+
+// Answer: 2. 
+// bools is a 3d array, moreBools is a 2d array. 
+// Fucking Java.
+
+Given:
+String[]args = {"flower", "seed"};
+String result = Arrays.binarySearch(args, args[0]);
+// What is the value of result?
+// Answer: compilation error (incompatible types)
+
+What is the result of the following?
+
+int k =0;
+for (int i=10;i>0;i--){
+    while (i>3) i -= 3;
+    k += 1;
+}
+System.out.println(k);
+
+// Answer: 1
+
+Does the following compile?
+boolean sell() {
+    if (price<10) {
+        return true;
+    } else if(price>=10) {
+        return false;
+    }
+}
+// Answer: NO!
+
+!!! Java uses pass-by-value to send data into a method. !!!
+
+Two instances of the same class may access each other’s private attributes.
+In particular this allows us to write the equals() methods between two objects that compare private attributes of the class.
+
+??? Can final appear before access modifier on a field???
+
+Two methods with the same signature cannot appear in the same class, even if one is static and the other isn't.
+
